@@ -40,7 +40,7 @@ FAN_KEYWORDS = [
 # konusuyla alakasız olabilecek kelimeler)
 EXCLUDE_KEYWORDS = [
     "klavye", "mouse", "tansiyon", "kulaklık", "kulaklik",
-    "telefon kılıf", "telefon kilif", "zeytinyağı", "zeytinyagi",
+    "telefon kılıf", "telefon kilif", "zeytinyağı", "zeytinyagi", "sistem", "hazır sistem", "hazir sistem", "pazarama"
 ]
 
 
