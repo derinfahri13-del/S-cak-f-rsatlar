@@ -43,7 +43,18 @@ EXCLUDE_KEYWORDS = [
     "telefon kılıf", "telefon kilif", "zeytinyağı", "zeytinyagi", "sistem", "hazır sistem", "hazir sistem", "pazarama"
 ]
 
-
+MONITOR_KEYWORDS = [
+    "monitor", "monitör", "144hz", "165hz", "240hz", "curved monitor",
+    "4k monitor", "gaming monitor", "oled monitor",
+]
+PHONE_KEYWORDS = [
+    "telefon", "akilli telefon", "iphone", "galaxy s", "galaxy a",
+    "galaxy z", "xiaomi", "redmi", "poco", "cep telefonu",
+]
+CASE_KEYWORDS = [
+    "kasa", "pc kasasi", "bilgisayar kasasi", "atx kasa",
+    "mid tower", "full tower", "mini itx kasa",
+]
 def load_seen():
     if os.path.exists(SEEN_FILE):
         with open(SEEN_FILE, "r", encoding="utf-8") as f:
@@ -67,6 +78,15 @@ def matches_category(title: str):
     for kw in FAN_KEYWORDS:
         if kw in t:
             return "Fan/Soğutucu"
+    for kw in MONITOR_KEYWORDS:
+        if kw in t:
+            return "Monitör"
+    for kw in PHONE_KEYWORDS:
+        if kw in t:
+            return "Telefon"
+    for kw in CASE_KEYWORDS:
+        if kw in t:
+            return "Kasa"
     return None
 
 
