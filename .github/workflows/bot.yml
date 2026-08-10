@@ -2,7 +2,7 @@ name: Sicak Firsatlar Bot
 
 on:
   schedule:
-    - cron: "*/10 * * * *"   # her 10 dakikada bir (GitHub bazen birkaç dk geciktirebilir)
+    - cron: "*/5 * * * *"    # her 5 dakikada bir (GitHub'ın desteklediği en kısa aralık)
   workflow_dispatch: {}        # Actions sekmesinden elle de çalıştırılabilir
 
 permissions:
